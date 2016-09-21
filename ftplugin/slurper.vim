@@ -11,28 +11,28 @@ let b:did_ftplugin = 1
 setlocal spell
 highlight SpellCap none
 
-nmap <buffer> <C-h> 
-      \:call cursor(search('^==\\|\%$', 'W'), -1, 0)
-      \<CR>
-      \o
-      \<C-D>==
-      \<CR>story_type:
-      \<CR>chore
-      \<CR>name:
-      \<CR><C-D>  
-      \<CR>description:
-      \<CR><C-D>  
-      \<CR>
-      \<CR>labels:
-      \<CR><C-D>  
-      \<Esc>
-      \5
-      \k
-      \<S-a>
+" nmap <buffer> <C-h> 
+"       \:call cursor(search('^==\\|\%$', 'W'), -1, 0)
+"       \<CR>
+"       \o
+"       \<C-D>==
+"       \<CR>story_type:
+"       \<CR>chore
+"       \<CR>name:
+"       \<CR><C-D>  
+"       \<CR>description:
+"       \<CR><C-D>  
+"       \<CR>
+"       \<CR>labels:
+"       \<CR><C-D>  
+"       \<Esc>
+"       \5
+"       \k
+"       \<S-a>
 
-imap <buffer> <C-h> <ESC><C-h>
+" imap <buffer> <C-h> <ESC><C-h>
 
-nmap <buffer> <C-j> 
+nmap <buffer> <C-f> 
       \:call cursor(search('^==\\|\%$', 'W'), -1, 0)
       \<CR>
       \o
@@ -51,30 +51,30 @@ nmap <buffer> <C-j>
       \k
       \<S-a>
 
-imap <buffer> <C-j> <ESC><C-j>
+imap <buffer> <C-f> <ESC><C-f>
 
-nmap <buffer> <C-k> 
-      \:call cursor(search('^==\\|\%$', 'W'), -1, 0)
-      \<CR>
-      \o
-      \<C-D>==
-      \<CR>story_type:
-      \<CR>release
-      \<CR>name:
-      \<CR><C-D>  
-      \<CR>description:
-      \<CR><C-D>  
-      \<CR>
-      \<CR><C-D>labels:
-      \<CR><C-D>  
-      \<Esc>
-      \5
-      \k
-      \<S-a>
+" nmap <buffer> <C-k> 
+"       \:call cursor(search('^==\\|\%$', 'W'), -1, 0)
+"       \<CR>
+"       \o
+"       \<C-D>==
+"       \<CR>story_type:
+"       \<CR>release
+"       \<CR>name:
+"       \<CR><C-D>  
+"       \<CR>description:
+"       \<CR><C-D>  
+"       \<CR>
+"       \<CR><C-D>labels:
+"       \<CR><C-D>  
+"       \<Esc>
+"       \5
+"       \k
+"       \<S-a>
 
-imap <buffer> <C-k> <ESC><C-k>
+" imap <buffer> <C-k> <ESC><C-k>
 
-nmap <buffer> <C-l> 
+nmap <buffer> <C-b> 
       \:call cursor(search('^==\\|\%$', 'W'), -1, 0)
       \<CR>
       \o
@@ -93,7 +93,7 @@ nmap <buffer> <C-l>
       \k
       \<S-a>
 
-imap <buffer> <C-l> <ESC><C-l>
+imap <buffer> <C-b> <ESC><C-b>
 
 function! SlurperFoldText()
   let storytype=substitute(getline(v:foldstart+2),'  ','','')
